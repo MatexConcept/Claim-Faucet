@@ -9,7 +9,9 @@ const ClaimFaucetModule = buildModule("ClaimFaucetModule", (m) => {
  
   const claimFaucet = m.contract("ClaimFaucet", [name, symbol]);
 
-  return { claimFaucet };
+  const claimFaucetFactory = m.contract("ClaimFaucetFactory", []);
+
+  return { claimFaucet,  claimFaucetFactory };
 });
 
 export default ClaimFaucetModule;
